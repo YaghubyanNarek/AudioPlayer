@@ -1,0 +1,116 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   font-family: cursive;
+   outline: none;
+   text-decoration: none;
+   transition: all .5s ease-in;
+   user-select: none; 
+}
+
+input[type='range'] {
+    cursor: grab;
+}
+
+input[type='range']:active {
+    cursor: grabbing;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, #052a2a,black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audio-player {
+    width: 500px;
+    height: auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #052a2a, black);
+    box-shadow: 0 0 2px 1px black inset, 0 0 2px white, 0 0 5px white, 0 0 7px black;
+    border: 3px dotted white;
+}
+
+.top-panel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+    padding: 5px 0;
+}
+
+.top-panel input{
+    width: 65%;
+}
+
+.picture-panel {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.picture-panel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 15px 15px 0 0;
+    transition: transform 450ms ease;
+    cursor: pointer;
+}
+
+.picture-panel img:hover{
+    transform: scale(1.05);
+}
+
+marquee{
+    font-size: 35px;
+    color: gold;
+    -webkit-text-stroke: .5px black;
+    animation: anim 3s linear infinite;
+    padding: 5px 0;
+}
+
+@keyframes anim {
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.button-panel{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background: white;
+    border-radius: 0 0 15px 15px;
+}
+
+.volume-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap:10px;
+    padding: 15px 0 0 0 ;
+}
+
+.volume-panel input {
+    width: 50%;
+}
+
+.button-panel i{
+    font-size: 20px;
+    cursor: pointer;
+}

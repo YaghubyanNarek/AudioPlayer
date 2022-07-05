@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="audio-player">
+            <audio src="" id="audio"></audio>
+            <div class="top-panel">
+                <span class="audio-duration">00:00</span>
+                <input type="range" class="duration-range">
+                <span class="audio-currentTime">00:00</span>
+            </div>
+            <marquee scrollamount="20" behaivor="scroll" direction="left" class="title">
+                Santiz-Tgg
+            </marquee>
+            <div class="picture-panel">
+                <img src="./artist/santiz.jpg" class="picture">
+            </div>
+            <div class="button-panel">
+                <span><i class="fa fa-undo undo"></i></span>
+                <span><i class="fa fa-backward prev"></i></span>
+                <span><i class="fa fa-play play"></i></span>
+                <span><i class="fa fa-forward next"></i></span>
+                <span><i class="fa fa-undo redo" style="transform:scale(-1,1)"></i></span>
+            </div>
+            <div class="volume-panel">
+                <span><i class="fa fa-volume-up"></i></span>
+                <input type="range" class="volume-range">   
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
